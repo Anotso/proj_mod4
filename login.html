@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>MODELO HTMl</title>
+        <!-- BOOTSTRAP 4.1 -->
+            <link rel="stylesheet" type="text/css" href="bs/css/bootstrap.css"/>
+            <script src="bs/jquery/jquery-3.3.1.slim.min.js"></script>
+            <script src="bs/popper/popper.min.js"></script>
+            <script src="bs/js/bootstrap.min.js"></script>
+        <!-- FONT AWESOME -->
+        <link href="fontawesome/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet"/>
+        <!-- CSS PRÓPRIO -->
+            <link rel="stylesheet" type="text/css" href="recursos/css/estilo.css"/>
+    </head>
+    <body class="principal">
+        <div class="container">
+            <div class="tl-login">
+            <form class="form-horizontal tl-login-int">
+                <fieldset>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <center><i class="fas fa-user-alt fa-6x"></i></center>
+                        </div>
+                    </div>
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="usuario">Usuário</label>  
+                        <div class="col-md-12">
+                            <input id="usuario" name="usuario" placeholder="" class="form-control input-md" required="" type="text">                        
+                        </div>
+                    </div>                    
+                    <!-- Password input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="senha">Senha</label>
+                        <div class="col-md-12">
+                            <input id="senha" name="senha" placeholder="" class="form-control input-md" required="" type="password">                        
+                        </div>
+                    </div>                    
+                    <!-- Button (Double) -->
+                    <div class="form-group row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-4">
+                            <button id="login" name="login" class="btn btn-block btn-primary btn-sm tl-login-bt">Login</button>
+                        </div>
+                        <div class="col-md-4">                            
+                            <button id="limpa" name="limpa" class="btn btn-block btn-danger btn-sm tl-login-bt tl-login-espbottom">Limpar</button>
+                        </div>
+                        <div class="col-md-2"></div>
+                    </div>                    
+                </fieldset>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
