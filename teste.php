@@ -17,7 +17,7 @@
     <body>
     <?php
         /*echo "huehuehuehuehuehuehue... brbrbrbrbrbr...";*/
-        require_once ("include/nav.html");
+        require_once ("include/navlogin.html");
     ?>
         <div class="container">
             <div class="row">
