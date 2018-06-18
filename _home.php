@@ -27,9 +27,11 @@
             ?>
         </header>
         <div class="container">
-            <?php
-                require_once "include/pesq.html";
-            ?>
+            <div class="principal">
+                <?php
+                    require_once "include/pesq.html";
+                ?>
+            </div>
         </div>
         <footer>
         </footer>
