@@ -12,27 +12,23 @@
         <!-- FONT AWESOME -->
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         <!-- CSS PRÓPRIO -->
-            <link rel="stylesheet" type="text/css" href="recursos/css/estilo2.css"/>
+            <link rel="stylesheet" type="text/css" href="recursos/css/estilo.css"/>
     </head>
     <body>
-        <header>
-            <?php
-                $us = "";
-                session_start();
-                if (isset($_SESSION["usuario"])){
-                    require_once "include/navlogout.html";
-                }else{
-                    require_once "include/navlogin.html";
-                }
-            ?>
-        </header>
-        <div class="container">
-            <div class="principal">
-                <?php
-                    require_once "include/pesq.html";
-                ?>
-            </div>
-        </div>
+        <?php
+            $us = "";
+            session_start();
+            /*if (isset($_SESSION["usuario"])){*/
+                require_once "include/navlogout.html";
+                echo    "<div class='container'>
+                            ";
+                require_once 'include/contpainel.html';
+                echo        "
+                    </div>";
+            /*}else{
+                header('Location: login.html');
+            }*/
+        ?>
         <footer>
         </footer>
     </body>
